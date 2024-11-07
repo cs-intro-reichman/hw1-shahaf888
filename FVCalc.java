@@ -1,15 +1,17 @@
 // Computes the future value of a saving investment.
 public class FVCalc {
 	public static void main(String[] args){
+		//taking the input from the command line
 		String currentValue = args[0];
 		String rate = args[1];
 		String nYears = args[2];
-		double new_rate=Double.parseDouble(rate);
-		double new_nYears=Double.parseDouble(nYears);
-		int new_currentValue=Integer.parseInt(currentValue);
-		double sum_after=(new_currentValue*Math.pow(1.0+(new_rate/100),new_nYears));
-		int sum_after_convert= (int) sum_after;
-		System.out.println("After "+nYears+" years, a $"+currentValue+" saved at "+new_rate+"% will yield $"+ sum_after_convert);
+		double newRate = Double.parseDouble(rate);
+		double newNYears = Double.parseDouble(nYears);
+		int newCurrentValue = Integer.parseInt(currentValue);
+		//make to calculation
+		double sumAfter = (newCurrentValue * Math.pow(1.0 + (newRate / 100), newNYears));
+		int sumAfterConvert = (int) sumAfter;
+		System.out.println("After " + nYears + " years, a $" + currentValue + " saved at " + newRate + "% will yield $" + sumAfterConvert);
 
 
 
