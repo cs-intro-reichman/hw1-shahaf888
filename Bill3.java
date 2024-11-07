@@ -7,6 +7,7 @@ public class Bill3 {
 		String name3 = args[2];
 		String amount = args[3];
 		int argument = Integer.parseInt(amount);
+		//dividing by 3.0 double
 		double avg=argument/3.0;
 		System.out.println("Dear "+name3+", "+name2+", and "+name1+": pay " +Math.ceil(avg)+ " Shekels each.");
 
