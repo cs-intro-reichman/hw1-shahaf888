@@ -6,6 +6,7 @@ public class Bill3 {
 		String name2 = args[1];
 		String name3 = args[2];
 		String amount = args[3];
+		//parsing to integer
 		int argument = Integer.parseInt(amount);
 		//dividing by 3.0 double
 		double avg = argument / 3.0;
