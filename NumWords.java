@@ -3,16 +3,16 @@ public class NumWords {
 	public static void main(String args[]) {
 	    // taking input from the command line and parse it to integer
 		String number = args[0];
-		int int_number= Integer.parseInt(number);
+		int intNumber = Integer.parseInt(number);
 		//if we have negative input
-		int_number=Math.abs(int_number);
+		intNumber = Math.abs(intNumber);
 		//split the number with %10 and /10
-		int ones=int_number%10;
-		int_number=int_number/10;
-		int tens=int_number%10;
-		int_number=int_number/10;
-		int hundreds=int_number;
-		System.out.println( hundreds +" hundreds, "+ tens + " tens, and " + ones + " ones.");
+		int ones = intNumber%10;
+		intNumber = intNumber/10;
+		int tens = intNumber%10;
+		intNumber = intNumber/10;
+		int hundreds = intNumber;
+		System.out.println( hundreds + " hundreds, " + tens + " tens, and " + ones + " ones.");
 
 
 	}
